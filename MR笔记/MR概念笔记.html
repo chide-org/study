@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>&#x57fa;&#x672c;&#x77e5;&#x8bc6;</title>
+    <style>
+      /* From extension vscode.github */
+      /*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+      .vscode-dark img[src$="\#gh-light-mode-only"],
+      .vscode-light img[src$="\#gh-dark-mode-only"] {
+        display: none;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css"
+    />
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI",
+          system-ui, "Ubuntu", "Droid Sans", sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+    </style>
+    <style>
+      .task-list-item {
+        list-style-type: none;
+      }
+
+      .task-list-item-checkbox {
+        margin-left: -20px;
+        vertical-align: middle;
+        pointer-events: none;
+      }
+    </style>
+    <style>
+      :root {
+        --color-note: #0969da;
+        --color-tip: #1a7f37;
+        --color-warning: #9a6700;
+        --color-severe: #bc4c00;
+        --color-caution: #d1242f;
+        --color-important: #8250df;
+      }
+    </style>
+    <style>
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --color-note: #2f81f7;
+          --color-tip: #3fb950;
+          --color-warning: #d29922;
+          --color-severe: #db6d28;
+          --color-caution: #f85149;
+          --color-important: #a371f7;
+        }
+      }
+    </style>
+    <style>
+      .markdown-alert {
+        padding: 0.5rem 1rem;
+        margin-bottom: 16px;
+        color: inherit;
+        border-left: 0.25em solid #888;
+      }
+
+      .markdown-alert > :first-child {
+        margin-top: 0;
+      }
+
+      .markdown-alert > :last-child {
+        margin-bottom: 0;
+      }
+
+      .markdown-alert .markdown-alert-title {
+        display: flex;
+        font-weight: 500;
+        align-items: center;
+        line-height: 1;
+      }
+
+      .markdown-alert .markdown-alert-title .octicon {
+        margin-right: 0.5rem;
+        display: inline-block;
+        overflow: visible !important;
+        vertical-align: text-bottom;
+        fill: currentColor;
+      }
+
+      .markdown-alert.markdown-alert-note {
+        border-left-color: var(--color-note);
+      }
+
+      .markdown-alert.markdown-alert-note .markdown-alert-title {
+        color: var(--color-note);
+      }
+
+      .markdown-alert.markdown-alert-important {
+        border-left-color: var(--color-important);
+      }
+
+      .markdown-alert.markdown-alert-important .markdown-alert-title {
+        color: var(--color-important);
+      }
+
+      .markdown-alert.markdown-alert-warning {
+        border-left-color: var(--color-warning);
+      }
+
+      .markdown-alert.markdown-alert-warning .markdown-alert-title {
+        color: var(--color-warning);
+      }
+
+      .markdown-alert.markdown-alert-tip {
+        border-left-color: var(--color-tip);
+      }
+
+      .markdown-alert.markdown-alert-tip .markdown-alert-title {
+        color: var(--color-tip);
+      }
+
+      .markdown-alert.markdown-alert-caution {
+        border-left-color: var(--color-caution);
+      }
+
+      .markdown-alert.markdown-alert-caution .markdown-alert-title {
+        color: var(--color-caution);
+      }
+    </style>
+  </head>
+  <body class="vscode-body vscode-light" style="font-size: 1.7em">
+    <h2 id="基本知识">基本知识</h2>
+    <ul>
+      <li>
+        <p>
+          核苷酸：单核苷酸是生物体内的基本结构单元之一，它包括一个<strong>五碳糖分子</strong>、一个<strong>磷酸基团</strong>和一个<strong>含氮碱基</strong>。核苷酸是构成核酸（DNA
+          和 RNA）的组成部分，它们通过磷酸二酯键连接成长链
+        </p>
+        <ul>
+          <li>
+            <p>嘌呤（二元环）：腺嘌呤（A）、鸟嘌呤（G）</p>
+          </li>
+          <li>
+            <p>嘧啶（一元环）：胞嘧啶（C）、胸腺嘧啶（T）、尿嘧啶（U）</p>
+          </li>
+          <li>
+            <p>DNA：ATCG 其中 A 与 T 配对（二氢键），C 与 G 配对（三氢键）</p>
+          </li>
+          <li>
+            <p>RNA：AUCG 其中 A 与 U 配对（二氢键），C 与 G 配对（三氢键）</p>
+            <blockquote>
+              <p>ATCG AUCG</p>
+              <p>TAGC UAGC</p>
+            </blockquote>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          SNP（单核苷酸多态性）：是基因组中常见的遗传变异形式，通常涉及<strong>单个碱基</strong>的替换。
+        </p>
+        <ul>
+          <li>
+            <p>转换：嘌呤或嘧啶同类型替换</p>
+          </li>
+          <li>
+            <p>颠换：嘌呤与嘧啶不同类型之间交换</p>
+          </li>
+          <li>
+            <p>插入：插入一个碱基对</p>
+          </li>
+          <li>
+            <p>缺失：缺失一个碱基对</p>
+          </li>
+          <li>
+            <p>实际上发生的只有两种，即转换和颠换,二者之比为 2 :1</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          GWAS(Genome-wide association
+          study)即全基因组关联分析，主要目标是识别<strong>基因</strong>与特定性状或<strong>疾病</strong>之间的<strong
+            >关联</strong
+          >
+        </p>
+      </li>
+      <li>
+        <p>PCa: prostate cancer 前列腺癌</p>
+      </li>
+      <li>
+        <p>MDD: major depressive disorder 严重抑郁症</p>
+      </li>
+      <li>
+        <p>MR: mendelian randomization 孟德尔随机</p>
+      </li>
+      <li>
+        <p>LD: linkage disequilibrium 连锁不平衡</p>
+      </li>
+      <li>
+        <p>
+          PRACTICAL consortium: Prostate Cancer Association Group to Investigate
+          Cancer-Associated Alterations in the Genome Consortium
+          一个致力于研究前列腺癌的国际研究合作团体
+        </p>
+      </li>
+      <li>
+        <p>IVM: inverse variance weighted 逆方差加权</p>
+      </li>
+      <li>
+        <p>
+          MR-PRESSO：一种用于 Mendelian Randomization (MR)
+          分析的工具，旨在识别和校正可能的水平偏倚（horizontal
+          pleiotropy）的影响。水平偏倚是指一个遗传变异对多个表型的影响，可能干扰了
+          MR 分析对因果关系的准确估计。
+        </p>
+      </li>
+      <li>
+        <p>
+          eGFR（estimated Glomerular Filtration
+          Rate）是估算的肾小球滤过率，用于评估患者的肾脏功能
+        </p>
+      </li>
+      <li>
+        <p>
+          CKD 是慢性肾脏病（Chronic Kidney
+          Disease）的缩写。慢性肾脏病是指肾脏逐渐失去功能并在较长时间内持续存在的疾病
+        </p>
+      </li>
+      <li>
+        <p>
+          多效性（Pleiotropy）是遗传学中的一个现象，指的是一个基因或基因变异影响多个表型特征，这些特征看似无关。这与“一个基因，一个特征”的原则相对立。多效性主要分为水平多效性和方向多效性两种类型，水平多效性代表特征之间没有强相关，方向多效性代表特征之间有强的关联
+        </p>
+      </li>
+      <li>
+        <p>OR：相对风险比，大于一促进发生，小于一抑制发生（二分类变量）</p>
+      </li>
+      <li>
+        <p>Beta：连续型变量的相对风险比 Beta = ln(OR)</p>
+      </li>
+      <li>
+        <p>eaf(effect allele frequence)：效应位点频率，算工具变量的时候需要</p>
+      </li>
+      <li>
+        <p>maf(main allele frequence)：其他位点频率</p>
+      </li>
+      <li>
+        <p>se：标准差，代表 OR 的准确性</p>
+      </li>
+      <li>
+        <p>
+          F 值：R 平方、n（样本数）、k（工具变量个数），F &gt; 10
+          就是强相关、强工具变量
+        </p>
+        <ul>
+          <li>单个 SNP 计算：k = 1 即可，一个 SNP 就可以算出一个 R 平方</li>
+          <li>
+            多个 SNP 计算：k = SNP 数，R 平方用每个 SNP 算出来的 R
+            平方的和代替即可
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
